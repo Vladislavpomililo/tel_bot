@@ -7,7 +7,7 @@ from app.hendlers import router
 
 dp = Dispatcher()
 
-async def main():
+async def main(): 
     load_dotenv()
     bot = Bot(token=os.getenv('TG_TOKEN'))
     dp.startup.register(startup)
